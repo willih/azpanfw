@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "publicIPAddressName": {
+            "value": "mphwfwtest2"
+        },
+        "publicIPNewOrExisting": {
+            "value": "new"
+        },
+        "publicIPAllocationMethod": {
+            "value": "Dynamic"
+        },
+        "publicIPRGName": {
+            "value": "mp-use-palofw2"
+        },
+        "vmName": {
+            "value": "fwusepalo2"
+        },
+        "adminUsername": {
+            "value": "admin"
+        },
+        "authenticationType": {
+            "value": "password"
+        },
+        "adminPasswordOrKey": {
+            "value": null
+        },
+        "vmSize": {
+            "value": "Standard_D3_v2"
+        },
+        "imageVersion": {
+            "value": "10.0.6"
+        },
+        "srcIPInboundNSG": {
+            "value": "0.0.0.0/0"
+        },
+        "virtualNetworkName": {
+            "value": "fwVNET"
+        },
+        "virtualNetworkExistingRGName": {
+            "value": "mp-use-palofw"
+        },
+        "virtualNetworkAddressPrefixes": {
+            "value": [
+                "10.1.0.0/16"
+            ]
+        },
+        "vnetNewOrExisting": {
+            "value": "Existing"
+        },
+        "subnet0Name": {
+            "value": "Mgmt"
+        },
+        "subnet1Name": {
+            "value": "Untrust"
+        },
+        "subnet2Name": {
+            "value": "Trust"
+        },
+        "subnet0Prefix": {
+            "value": "10.1.0.0/24"
+        },
+        "subnet1Prefix": {
+            "value": "10.1.1.0/24"
+        },
+        "subnet2Prefix": {
+            "value": "10.1.2.0/24"
+        },
+        "subnet1StartAddress": {
+            "value": "10.1.1.5"
+        },
+        "subnet2StartAddress": {
+            "value": "10.1.2.5"
+        },
+        "bootstrap": {
+            "value": "no"
+        },
+        "customData": {
+            "value": "storage-account=None,access-key=None,file-share=None,share-directory=None"
+        }
+    }
+}
