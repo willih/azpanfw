@@ -1,86 +1,98 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "location": {
-            "value": "eastus"
-        },
-        "publicIPAddressName": {
-            "value": "mphwfwtest2"
-        },
-        "publicIPNewOrExisting": {
-            "value": "new"
-        },
-        "publicIPAllocationMethod": {
-            "value": "Dynamic"
-        },
-        "publicIPRGName": {
-            "value": "mp-use-palofw2"
-        },
-        "vmName": {
-            "value": "fwusepalo2"
-        },
-        "adminUsername": {
-            "value": "admin"
-        },
-        "authenticationType": {
-            "value": "password"
-        },
-        "adminPasswordOrKey": {
-            "value": null
-        },
-        "vmSize": {
-            "value": "Standard_D3_v2"
-        },
-        "imageVersion": {
-            "value": "10.0.6"
-        },
-        "srcIPInboundNSG": {
-            "value": "0.0.0.0/0"
-        },
-        "virtualNetworkName": {
-            "value": "fwVNET"
-        },
-        "virtualNetworkExistingRGName": {
-            "value": "mp-use-palofw"
-        },
-        "virtualNetworkAddressPrefixes": {
-            "value": [
-                "10.1.0.0/16"
-            ]
-        },
-        "vnetNewOrExisting": {
-            "value": "Existing"
-        },
-        "subnet0Name": {
-            "value": "Mgmt"
-        },
-        "subnet1Name": {
-            "value": "Untrust"
-        },
-        "subnet2Name": {
-            "value": "Trust"
-        },
-        "subnet0Prefix": {
-            "value": "10.1.0.0/24"
-        },
-        "subnet1Prefix": {
-            "value": "10.1.1.0/24"
-        },
-        "subnet2Prefix": {
-            "value": "10.1.2.0/24"
-        },
-        "subnet1StartAddress": {
-            "value": "10.1.1.5"
-        },
-        "subnet2StartAddress": {
-            "value": "10.1.2.5"
-        },
-        "bootstrap": {
-            "value": "no"
-        },
-        "customData": {
-            "value": "storage-account=None,access-key=None,file-share=None,share-directory=None"
-        }
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "eastus"
+    },
+    "srcIPInboundNSG": {
+      "value": "0.0.0.0/0"
+    },
+    "customData": {
+      "value": "storage-account=None,access-key=None,file-share=None,share-directory=None"
+    },
+    "vmName": {
+      "value": "fwusepalo2"
+    },
+    "imageVersion": {
+      "value": "10.0.6"
+    },
+    "vmSize": {
+      "value": "Standard_D3_v2"
+    },
+    "virtualNetworkName": {
+      "value": "fwVNET"
+    },
+    "vnetNewOrExisting": {
+      "value": "existing"
+    },
+    "virtualNetworkAddressPrefixes": {
+      "value": [
+        "10.1.0.0/16"
+      ]
+    },
+    "virtualNetworkExistingRGName": {
+      "value": "mp-use-palofw"
+    },
+    "subnet0Name": {
+      "value": "Mgmt"
+    },
+    "subnet1Name": {
+      "value": "Untrust"
+    },
+    "subnet2Name": {
+      "value": "Trust"
+    },
+    "subnet0Prefix": {
+      "value": "10.1.0.0/24"
+    },
+    "subnet1Prefix": {
+      "value": "10.1.1.0/24"
+    },
+    "subnet2Prefix": {
+      "value": "10.1.2.0/24"
+    },
+    "subnet1StartAddress": {
+      "value": "10.1.1.5"
+    },
+    "subnet2StartAddress": {
+      "value": "10.1.2.5"
+    },
+    "authenticationType": {
+      "value": "password"
+    },
+    "adminUsername": {
+      "value": "admin"
+    },
+    "adminPasswordOrKey": {
+      "value": null
+    },
+    "publicIPNewOrExisting": {
+      "value": "new"
+    },
+    "publicIPAddressName": {
+      "value": "mphwfwtest2"
+    },
+    "publicIPRGName": {
+      "value": "mp-use-palofw2"
+    },
+    "publicIPAllocationMethod": {
+      "value": "Dynamic"
+    },
+    "bootstrap": {
+      "value": "no"
+    },
+    "zone": {
+      "value": "None"
+    },
+    "availabilitySetName": {
+      "value": "avset-panfw"
+    },
+    "availabilitySetPlatformFaultDomainCount": {
+      "value": "2"
+    },
+    "availabilitySetPlatformUpdateDomainCount": {
+      "value": "5"
     }
+  }
 }
