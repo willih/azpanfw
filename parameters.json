@@ -77,7 +77,7 @@
       "value": "mp-use-palofw2"
     },
     "publicIPAllocationMethod": {
-      "value": "Dynamic"
+      "value": "Static"
     },
     "bootstrap": {
       "value": "no"
