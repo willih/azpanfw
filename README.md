@@ -3,8 +3,6 @@
 
 
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fwillih%2Fazpanfw%2Fmaster%2Ftemplate.json)
-
 
 Panfw - directions
 Enable eth1/1- set interface type layer3, set VR to default, set to DHCP client & uncheck default gateway, commit then set sec zone to untrust.
