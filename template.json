@@ -89,7 +89,7 @@
         },
         "virtualNetworkAddressPrefixes": {
             "type": "array",
-            "defaultValue": "[array('192.168.0.0/16')]",
+            "defaultValue": "",
             "metadata": {
                 "description": "Virtual network address CIDR"
             }
@@ -251,7 +251,7 @@
         "imageSku": "byol",
         "imageOffer": "vmseries-flex",
         "nsgName": "DefaultNSG",
-        "nicName": "[concat(parameters('vmName'), '-', parameters('publicIPAddressName'), '-eth')]",
+        "nicName": "[concat(parameters('vmName'), '-eth')]",
         "FWPrivateIPAddressUntrust": "[parameters('subnet1StartAddress')]",
         "FWPrivateIPAddressTrust": "[parameters('subnet2StartAddress')]",
         "existingVnetID": "[resourceId(parameters('virtualNetworkExistingRGName'),concat('Microsoft.Network','/','virtualNetworks'),parameters('virtualNetworkName'))]",
